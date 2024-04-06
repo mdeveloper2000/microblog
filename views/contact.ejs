@@ -1,0 +1,29 @@
+<%- include("./partials/header"); -%>
+
+<div class="container">
+    <div class="row" style="width: 50%;">
+        <div class="col-12">
+            <div class="card">
+                <p>Contact Us</p>
+                <form>
+                    <fieldset>
+                        <legend>Fill in the form</legend>
+                        <input type="text" name="name" id="name" maxlength="30" placeholder="Name">
+                        <input type="email" name="email" id="email" maxlength="50" placeholder="E-mail">
+                        <textarea name="commentary" id="commentary" maxlength="250" placeholder="Comments" rows="3"></textarea>
+                        <div style="display: flex; align-items: center; justify-content: space-between;">
+                            <button type="reset" class="bg-error text-white">Cancel</button>
+                            <button type="submit" id="send">Send</button>
+                        </div>
+                        <div class="error bg-error text-center text-white is-hidden errors">Fill in all fields</div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="/js/script.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.row {
+    margin-top: 25px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    align-items: center;
+    justify-content: center;
+}
+
+.articles {    
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+details {
+    width: 100%;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+.card {
+    margin-bottom: 20px;
+    padding: 20px;
+    z-index: 1;
+}
+
+details .card, summary {
+    width: 100%;
+}
+
+.tag {
+    margin-top: 20px;
+}
+
+.contact {
+    width: 100%;
+}
+
+form {
+    margin-top: 15px;
+}
+
+fieldset {
+    width: 100%;    
+    margin: 0 auto;
+    padding: 20px;
+}
+
+input[type="text"], input[type="email"], textarea {
+    margin: 15px 0;
+}
+
+textarea {
+    resize: none;
+}
+
+button[type="submit"] {
+    margin: 15px 0;
+}
+
+header h4, .card p {
+    white-space: break-spaces;
+}
+
+.errors {
+    padding: 5px;
+}

@@ -1,0 +1,13 @@
+<nav class="nav">
+    <div class="nav-left">
+        <a href="/" <% if(page == "Home") { %> class="active bd-success" <% } %>>Home</a>
+        <a href="/articles" <% if(page == "Articles") { %> class="active bd-success" <% } %>>Articles</a>        
+    </div>
+    <div class="nav-center">
+        <a class="brand text-success" href="/">microblog</a>
+    </div>
+    <div class="nav-right">
+        <a href="/about" <% if(page == "About") { %> class="active bd-success" <% } %>>About</a>
+        <a href="/contact" <% if(page == "Contact") { %> class="active bd-success" <% } %>>Contact</a>
+    </div>
+</nav>

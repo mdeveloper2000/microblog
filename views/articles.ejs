@@ -1,0 +1,26 @@
+<%- include("./partials/header"); -%>
+
+<div class="container">    
+    <% articles.forEach(article => { %>
+        <details class="dropdown">
+            <summary class="button bg-success text-white text-justify">
+                <%= article.title %> (click to read more...)
+            </summary>
+            <div class="card">
+                <header>
+                    <h4><%= article.title %></h4>
+                </header>
+                <p><%= article.content %></p>                    
+                <footer class="is-right">
+                    <% const tags = article.tags.split(",") %>
+                    <% tags.forEach(tag => {  %>
+                        <span class="tag is-large bd-primary"><%= tag %></span>
+                    <% }) %>
+                </footer>
+            </div>
+        </details>                
+    <% }) %>
+</div>
+
+</body>
+</html>
